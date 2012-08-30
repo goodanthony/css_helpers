@@ -1,0 +1,345 @@
+
+/*-----------------------------------------------------------------------------------------------*/
+/* common  
+/*-----------------------------------------------------------------------------------------------*/
+.clear { clear: both; height: 0; overflow: hidden; }
+.clear5 { clear: both;  overflow: hidden; height: 5px;}
+.clear10 { clear: both;  overflow: hidden; height: 10px;}
+.clear15{ clear: both;   overflow: hidden; height: 15px;}
+.clear20 { clear: both;   overflow: hidden; height: 20px;}
+.clear25 { clear: both;   overflow: hidden; height: 25px;}
+.clear30 { clear: both;   overflow: hidden; height: 30px;}
+.clear35 { clear: both;   overflow: hidden; height: 35px;}
+.clear40 { clear: both;   overflow: hidden; height: 40px;}
+.clear45 { clear: both;   overflow: hidden; height: 55px;}
+.clear50 { clear: both;   overflow: hidden; height: 50px;}
+.clear55 { clear: both;   overflow: hidden; height: 55px;}
+.clear60 { clear: both;   overflow: hidden; height: 60px;}
+.clear65 { clear: both;   overflow: hidden; height: 60px;}
+.clear65 { clear: both;   overflow: hidden; height: 65px;}
+.clear70 { clear: both;   overflow: hidden; height: 70px;}
+.clear100 { clear: both;   overflow: hidden; height: 100px;} 
+
+.clearfix:before, .clearfix:after  {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.right { float: right;}
+.left { float: left; }
+.block{ display:block;}
+cleft{ clear: left;}
+cright{ clear: right;}
+ 
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+
+.no-padding input {padding: 0; margin: 0; }
+
+.no-padding textarea { padding: 0; margin: 0;}
+
+.text-center { text-align: center}
+
+.width1-hundred{width: 100%}
+
+
+/*--------------------------------------------fonts----------------------------------------*/
+
+.bold { font-weight:bold;}
+.fs12 { font-size: 12px;}
+.fs12 p{ font-size: 12px;}
+.fs12 a{ font-size: 12px;}
+
+.fs14 { font-size: 14px;}
+.fs14 p{ font-size: 14px;}
+.fs14 a{ font-size: 14px;}
+ 
+.fs16 {font-size: 16px;}
+.fs16 p{ font-size: 16px;}
+.fs16 a{ font-size: 16px;}
+
+.fs18 { font-size: 18px;}
+.fs18 p{ font-size: 18px;}
+.fs18 a{ font-size: 18px;}
+
+.fs20{ font-size: 20px;}
+.fs20 p{ font-size: 20px;}
+.fs20 a{ font-size: 20px;}
+
+.fs22{ font-size: 22px;}
+.fs22 p{ font-size: 22px;}
+.fs22 a{ font-size: 22px;}
+
+.fs24{ font-size: 24px;}
+.fs24 p{ font-size: 24px;}
+.fs24 a{ font-size: 24px;}
+ 
+.fs24{ font-size: 24px;}
+.fs24 p{ font-size: 24px;}
+.fs24 a{ font-size: 24px;}
+
+.fs26{ font-size: 26px;}
+.fs26 p{ font-size: 26px;}
+.fs26 a{ font-size: 26px;}
+
+
+.fs28{ font-size: 28px;}
+.fs28 p{ font-size: 28px;}
+.fs28 a{ font-size: 28px;}
+
+
+.fs30{ font-size: 30px;}
+.fs30 p{ font-size: 30px;}
+.fs30 a{ font-size: 30px;}
+
+
+.fs-normal{ font-weight: normal;}
+.fs-normal a{ font-weight: normal;}
+
+.fs-bold { font-weight: bold;}
+.fs-bold a{ font-weight: bold;}
+
+.fs-bolder { font-weight: bolder;}
+.fs-bolder a{ font-weight: bolder;}
+
+.fs-lighter{ font-weight: lighter;}
+.fs-lighter a{ font-weight: lighter;}
+
+/*--------------------------------------------lines----------------------------------------*/
+.lh15   {line-height: 15px;}
+.lh20 {line-height: 20px;}
+/*--------------------------------------------spacers---------------------------------------*/
+.spacer5 {width: 100%; height: 5px;}
+.spacer10 {width: 100%; height: 10px;}
+.spacer15 {width: 100%; height: 15px;}
+.spacer20 {width: 100%; height: 20px;}
+
+/*--------------------------------------------colors---------------------------------------*/
+ 
+.green { color:  green; }
+.green a { color: green; }
+.green input { color:  green; }
+
+.red { color: #FF0000; }
+.red a{ color: #FF0000; }
+.red  input { color: #FF0000; }
+.red-bg{ background-color: #FF0000;}
+
+.gray-dark {color: #666;}
+.gray-dark a{color: #666;}
+.gray-dark input {color: #666;}
+
+.gray-light {color: #ccc;}
+.gray-light a{color: #ccc;}
+.gray-light input{color: #ccc;}
+.gray-light-bg{ background-color: #ccc;}
+
+
+.black { color:black;}
+.black  a{ color:black;}
+.black input { color:black;}
+.black-bg{ background:black;}
+
+.white {color: white;}
+.white a{color: white;}
+.white input{color: white;}
+.whiteb{ background: white;}
+
+
+.yellow {color:#FFFF00; }
+.yellow a{color:#FFFF00; }
+.yellow input{color:#FFFF00; }
+.yellow-bg{background-color:#FFFF00; }
+
+
+.brown {color:#CC9; }
+.brown-bg{background-color:#CC9; }
+/*--------------------------------------------margins---------------------------------------*/
+
+.m5 { margin: 5px;}
+.m10 { margin: 10px;}
+.m15 { margin: 15px;}
+.m20 { margin: 20px;}
+
+.mt5 { margin-top: 5px;}
+.mt10 { margin-top: 10px;}
+.mt15 { margin-top: 15px;}
+.mt20 { margin-top: 20px;}
+.mt30{ margin-top: 30px;}
+.mt40 { margin-top: 40px;}
+.mt50 { margin-top: 50px;}
+.mt60{ margin-top: 60px;}
+.mt100{ margin-left: 100px;}
+
+.ml5 { margin-left: 5px;}
+.ml10 { margin-left: 10px;}
+.ml15 { margin-left: 15px;}
+.ml20 { margin-left: 20px;}
+.ml30{ margin-left: 30px;}
+.ml40 { margin-left: 40px;}
+.ml50 { margin-left: 50px;}
+.ml60{ margin-left: 60px;}
+.ml80{ margin-left: 80px;}
+.ml100{ margin-left: 100px;}
+
+.mr5 { margin-right: 5px;}
+.mr10 { margin-right: 10px;}
+.mr15 { margin-right: 15px;}
+.mr20 { margin-right: 20px;}
+.mr30{ margin-right: 30px;}
+.mr40 { margin-right: 40px;}
+.mr50 { margin-right: 50px;}
+.mr60{ margin-right: 60px;}
+.mr100{ margin-right: 100px;}
+
+.mb5 { mbmargin-bottom: 5px;}
+.mb10 { mbmargin-bottom: 10px;}
+.mb15 { margin-bottom: 15px;}
+.mb20 { mbmargin-bottom: 20px;}
+.mb30{ mbmargin-bottom: 30px;}
+.mb40 { mbmargin-bottom: 40px;}
+.mb50 { mbmargin-bottom: 50px;}
+.mb60{ mbmargin-bottom: 60px;}
+.mb100{ mbmargin-bottom: 100px;}
+/*--------------------------------------------paddings---------------------------------------*/
+.p5{ padding: 5px; }
+.p10{ padding: 10px; }	
+.p20 { padding: 20px; }
+
+.pt5 { padding-top: 5px;}
+.pt10 { padding-top: 10px;}
+.pt15 { padding-top: 15px;}
+.pt20 { padding-top: 20px;}
+.pt30{ padding-top: 30px;}
+.pt40 { padding-top: 40px;}
+.pt50 { padding-top: 50px;}
+.pt60{ padding-top: 60px;}
+ 
+.pl5 { padding-left: 5px;}
+.pl10 { padding-left: 10px;}
+.pl15 { padding-left: 15px;}
+.pl20 { padding-left: 20px;}
+.pl30{ padding-left: 30px;}
+.pl40 { padding-left: 40px;}
+.pl50 { padding-left: 50px;}
+.pl60{ padding-left: 60px;}
+ 
+.pr5 { padding-right: 5px;}
+.pr10 { padding-right: 10px;}
+.pr15 { padding-right: 15px;}
+.pr20 { padding-right: 20px;}
+.pr30{ padding-right: 30px;}
+.pr40 { padding-right: 40px;}
+.pr50 { padding-right: 50px;}
+.pr60{ padding-right: 60px;}
+ 
+.pb5 { padding-bottom: 5px;}
+.pb10 { padding-bottom: 10px;}
+.pb15 { padding-bottom: 15px;}
+.pb20 {  padding-bottom: 20px;}
+.pb30{  padding-bottom: 30px;}
+.pb40 {  padding-bottom: 40px;}
+.pb50 {  padding-bottom: 50px;}
+.pb60{  padding-bottom: 60px;}
+
+
+/*--------------------------------------------boxes---------------------------------------*/
+.xbox5 { width: 5px; 	   display: block; }
+.xbox50 { width: 50px; 	   display: block;}
+.xbox75 { width: 75px;     display: block;}
+.xbox100{width: 100px; 	   display: block;}
+.xbox120 { width: 120px;   display: block;}
+.xbox125 { width: 125px;   display: block;}
+.xbox140 { width: 140px;   display: block;}
+.xbox150{ width: 150px;    display: block; overflow:hidden;}
+.xbox160 { width: 160px;   display: block;}
+.xbox175 { width: 175px;   display: block;}
+.xbox200 { width: 200px;   display: block;}
+.xbox225 { width: 225px;   display: block;}
+.xbox250{ width: 250px;  	display: block;}
+.xbox275 { width: 275px; 	display: block;}
+.xbox300 { width: 300px;  	display: block;}
+.xbox350 { width: 350px;  	display: block;}
+.xbox400 { width: 400px;  	display: block;}
+.xbox450 { width: 450px; 	display: block;}
+.xbox500 { width: 500px; 	display: block;  }
+.xbox600 { width: 600px; 	display: block;}
+.xbox700 { width: 700px; 	display: block;}
+.xbox750 { width: 750px; 	display: block;}
+
+
+
+
+.ybox5 { height:  5px; width: 100%; display: block;  }
+.ybox10{ height: 10px; width: 100%; display: block;  }
+.ybox15{ height: 15px; width: 100%; display: block;  }
+.ybox20{ height: 20px; width: 100%; display: block;  }
+.ybox25{ height: 25px; width: 100%; display: block;  }
+.ybox30{ height: 30px; width: 100%; display: block;  }
+.ybox35{ height: 35px; width: 100%; display: block;  }
+.ybox40{ height: 40px; width: 100%; display: block;  }
+.ybox45{ height: 45px; width: 100%; display: block;  }
+.ybox50{ height: 50px; width: 100%; display: block;  }
+.ybox55{ height: 55px; width: 100%; display: block;  }
+.ybox60{ height: 60px; width: 100%; display: block;  }
+.ybox65{ height: 65px; width: 100%; display: block;  }
+.ybox70{ height: 70px; width: 100%; display: block;  }
+.ybox75{ height: 75px; width: 100%; display: block;  }
+.ybox80{ height: 80px; width: 100%; display: block;  }
+.ybox85{ height: 85px; width: 100%; display: block;  }
+.ybox90{ height: 90px; width: 100%; display: block;  }
+.ybox95{ height: 95px; width: 100%; display: block;  }
+.ybox100{ height: 100px; width: 100%; display: block;  }
+
+
+
+/*--------------------------------------------heights---------------------------------------*/
+.h5 {height: 5px; overflow: hidden;}
+.h10 {height: 10px;  overflow: hidden;}
+.h15 {height: 15px;  overflow: hidden;}
+.h20 {height: 20px;  overflow: hidden;}
+.h25{height: 25px;  overflow: hidden;}
+.h150{height: 150px;  overflow: hidden;}
+.h180{height: 180px;  overflow: hidden;}
+.h200{height: 200px;  overflow: hidden;}
+.h250 {height: 250px;  overflow: hidden;}
+
+
+
+
+
+.b3{border: 3px solid #000; }
+
+.bb1  { border-bottom: 1px solid #999; height: 1px; width: 100% }
+.bb2  { border-bottom: 2px solid #999; height: 2px; width: 100% }
+.bb3  { border-bottom: 3px solid #999; height: 3px; width: 100% }
+.w100{width: 100px;}
+
+
+
+/*--------------------------------------------solid 100% boxes---------------------------------------*/
+
+.box-long20{ width: 100%; height: 20px; clear: both;}
+.box-long150 { width: 100%; height: 150px; clear: both;}
+
+/*--------------------------------------------flexi 100% boxes---------------------------------------*/
+
+.box-flexi150 { width: 100%; height: 150px; float: left;}
+
+/*--------------------------------------------lines---------------------------------------*/
+.line1 { height: 1px; width : 100%;  }
+
+/*--------------------------------------------no's--------------------------------------*/
+.no-underline a{ text-decoration: none;}
+.hidden {overflow: hidden;}
+.minus-five { margin-top: -5px;}
+.italic{  font-style:italic;	}
+.normal{ font-style:normal;	}
+.uppercase {text-transform:uppercase;}
