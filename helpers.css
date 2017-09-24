@@ -1,7 +1,6 @@
-
-/*-----------------------------------------------------------------------------------------------*/
-/* common  
-/*-----------------------------------------------------------------------------------------------*/
+/* =============================================================================
+   Helpers
+   ========================================================================== */
 .clear { clear: both; height: 0; overflow: hidden; }
 .clear5 { clear: both;  overflow: hidden; height: 5px;}
 .clear10 { clear: both;  overflow: hidden; height: 10px;}
@@ -18,7 +17,7 @@
 .clear65 { clear: both;   overflow: hidden; height: 60px;}
 .clear65 { clear: both;   overflow: hidden; height: 65px;}
 .clear70 { clear: both;   overflow: hidden; height: 70px;}
-.clear100 { clear: both;   overflow: hidden; height: 100px;} 
+.clear100 { clear: both;   overflow: hidden; height: 100px;}
 
 .clearfix:before, .clearfix:after  {
   content: '.';
@@ -37,7 +36,8 @@
 .block{ display:block;}
 cleft{ clear: left;}
 cright{ clear: right;}
- 
+
+.pointer { cursor: pointer;}
 .no-margin { margin: 0; }
 .no-padding { padding: 0; }
 
@@ -49,10 +49,27 @@ cright{ clear: right;}
 
 .width1-hundred{width: 100%}
 
+.link-underline a { text-decoration: underline !important;}
+
+.relative-area { position: relative;}
+
+
 
 /*--------------------------------------------fonts----------------------------------------*/
 
-.bold { font-weight:bold;}
+.bold,.bold a { font-weight:bold;}
+.no-bold, .no-bold a { font-weight:normal;}
+.capitalise {text-transform: capitalize;}
+
+.fs8 { font-size: 8px;}
+.fs8 p{ font-size: 8px;}
+.fs8 a{ font-size: 8px;}
+
+.fs10 { font-size: 10px;}
+.fs10 p{ font-size: 10px;}
+.fs10 a{ font-size: 10px;}
+
+
 .fs12 { font-size: 12px;}
 .fs12 p{ font-size: 12px;}
 .fs12 a{ font-size: 12px;}
@@ -60,7 +77,7 @@ cright{ clear: right;}
 .fs14 { font-size: 14px;}
 .fs14 p{ font-size: 14px;}
 .fs14 a{ font-size: 14px;}
- 
+
 .fs16 {font-size: 16px;}
 .fs16 p{ font-size: 16px;}
 .fs16 a{ font-size: 16px;}
@@ -80,7 +97,7 @@ cright{ clear: right;}
 .fs24{ font-size: 24px;}
 .fs24 p{ font-size: 24px;}
 .fs24 a{ font-size: 24px;}
- 
+
 .fs24{ font-size: 24px;}
 .fs24 p{ font-size: 24px;}
 .fs24 a{ font-size: 24px;}
@@ -122,10 +139,11 @@ cright{ clear: right;}
 .spacer20 {width: 100%; height: 20px;}
 
 /*--------------------------------------------colors---------------------------------------*/
- 
+
 .green { color:  green; }
 .green a { color: green; }
 .green input { color:  green; }
+.green-bg { background:  green; }
 
 .red { color: #FF0000; }
 .red a{ color: #FF0000; }
@@ -163,6 +181,7 @@ cright{ clear: right;}
 .brown-bg{background-color:#CC9; }
 /*--------------------------------------------margins---------------------------------------*/
 
+.m0 {margin: 0}
 .m5 { margin: 5px;}
 .m10 { margin: 10px;}
 .m15 { margin: 15px;}
@@ -199,18 +218,21 @@ cright{ clear: right;}
 .mr60{ margin-right: 60px;}
 .mr100{ margin-right: 100px;}
 
-.mb5 { mbmargin-bottom: 5px;}
-.mb10 { mbmargin-bottom: 10px;}
+.mb5 {  margin-bottom: 5px;}
+.mb10 {  margin-bottom: 10px;}
 .mb15 { margin-bottom: 15px;}
-.mb20 { mbmargin-bottom: 20px;}
-.mb30{ mbmargin-bottom: 30px;}
-.mb40 { mbmargin-bottom: 40px;}
-.mb50 { mbmargin-bottom: 50px;}
-.mb60{ mbmargin-bottom: 60px;}
-.mb100{ mbmargin-bottom: 100px;}
+.mb20 {  margin-bottom: 20px;}
+.mb30{  margin-bottom: 30px;}
+.mb40 {  margin-bottom: 40px;}
+.mb50 {  margin-bottom: 50px;}
+.mb60{  margin-bottom: 60px;}
+.mb100{  margin-bottom: 100px;}
+
+.mtm10 { margin-top: -10}
 /*--------------------------------------------paddings---------------------------------------*/
+.p0{padding: 0;}
 .p5{ padding: 5px; }
-.p10{ padding: 10px; }	
+.p10{ padding: 10px; }
 .p20 { padding: 20px; }
 
 .pt5 { padding-top: 5px;}
@@ -221,7 +243,7 @@ cright{ clear: right;}
 .pt40 { padding-top: 40px;}
 .pt50 { padding-top: 50px;}
 .pt60{ padding-top: 60px;}
- 
+
 .pl5 { padding-left: 5px;}
 .pl10 { padding-left: 10px;}
 .pl15 { padding-left: 15px;}
@@ -230,7 +252,7 @@ cright{ clear: right;}
 .pl40 { padding-left: 40px;}
 .pl50 { padding-left: 50px;}
 .pl60{ padding-left: 60px;}
- 
+
 .pr5 { padding-right: 5px;}
 .pr10 { padding-right: 10px;}
 .pr15 { padding-right: 15px;}
@@ -239,7 +261,7 @@ cright{ clear: right;}
 .pr40 { padding-right: 40px;}
 .pr50 { padding-right: 50px;}
 .pr60{ padding-right: 60px;}
- 
+
 .pb5 { padding-bottom: 5px;}
 .pb10 { padding-bottom: 10px;}
 .pb15 { padding-bottom: 15px;}
@@ -255,6 +277,7 @@ cright{ clear: right;}
 .xbox50 { width: 50px; 	   display: block;}
 .xbox75 { width: 75px;     display: block;}
 .xbox100{width: 100px; 	   display: block;}
+.xbox110{width: 110px; 	   display: block;}
 .xbox120 { width: 120px;   display: block;}
 .xbox125 { width: 125px;   display: block;}
 .xbox140 { width: 140px;   display: block;}
@@ -301,15 +324,16 @@ cright{ clear: right;}
 
 
 /*--------------------------------------------heights---------------------------------------*/
-.h5 {height: 5px; overflow: hidden;}
-.h10 {height: 10px;  overflow: hidden;}
-.h15 {height: 15px;  overflow: hidden;}
-.h20 {height: 20px;  overflow: hidden;}
-.h25{height: 25px;  overflow: hidden;}
-.h150{height: 150px;  overflow: hidden;}
-.h180{height: 180px;  overflow: hidden;}
-.h200{height: 200px;  overflow: hidden;}
-.h250 {height: 250px;  overflow: hidden;}
+.height5 {height: 5px; overflow: hidden;}
+.height10 {height: 10px;  overflow: hidden;}
+.height15 {height: 15px;  overflow: hidden;}
+.height20 {height: 20px;  overflow: hidden;}
+.height25{height: 25px;  overflow: hidden;}
+.height100{height: 100px;  overflow: hidden;}
+.height150{height: 150px;  overflow: hidden;}
+.height180{height: 180px;  overflow: hidden;}
+.height200{height: 200px;  overflow: hidden;}
+.height250 {height: 250px;  overflow: hidden;}
 
 
 
@@ -322,6 +346,24 @@ cright{ clear: right;}
 .bb3  { border-bottom: 3px solid #999; height: 3px; width: 100% }
 .w100{width: 100px;}
 
+
+
+
+
+.mw100{
+  max-width: 100px;
+}
+
+.mw200{
+  max-width: 200px;
+}
+.mw300{
+  max-width: 300px;
+}
+
+.mw400{
+  max-width: 400px;
+}
 
 
 /*--------------------------------------------solid 100% boxes---------------------------------------*/
@@ -338,8 +380,212 @@ cright{ clear: right;}
 
 /*--------------------------------------------no's--------------------------------------*/
 .no-underline a{ text-decoration: none;}
+.no-underline { text-decoration: none;}
+.underline a{ text-decoration: underline;}
+.underline { text-decoration: underline;}
 .hidden {overflow: hidden;}
 .minus-five { margin-top: -5px;}
 .italic{  font-style:italic;	}
 .normal{ font-style:normal;	}
 .uppercase {text-transform:uppercase;}
+.capitalize {text-transform:capitalize;}
+.minus-twenty { margin-top: -20px;}
+
+/*--------------------------------------------form----------------------------------------*/
+
+.small_text_area textarea{
+	height: 50px;
+}
+
+
+#flash .alert {
+	background: #FF6F57;
+}
+
+
+.field {
+	margin-bottom: 20px;
+}
+
+
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+color: #000;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+
+.field_with_errors {
+  display: inline;
+}
+.field_with_errors input {
+border: solid #cc3300 1px;
+}
+
+
+.field  .field_with_errors input {
+border: solid #cc3300 1px;
+}
+
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  margin: 8px 10px;
+}
+
+#error_explanation ul {
+  margin: 15px 0;
+}
+#error_explanation ul li {
+  margin: 5px 15px;
+
+}
+
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.field_with_errors .message {
+  color: #D00;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+.link-wrap {
+    hyphens: auto;
+    word-break: break-all;
+}
+
+
+
+/*--------------------------------------------cards----------------------------------------*/
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+
+
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16) ;
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-6{
+  box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.16), 0 4px 8px 0 rgba(0, 0, 0, 0.24);
+}
+
+.shadow-white-box {
+  background: #fff;
+  border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16) ;
+}
+
+
+.mw100 {
+  max-width: 100px;
+}
+
+
+.z-index-1000{
+  z-index: 1000;
+}
+
+.z-index-2000{
+  z-index: 2000;
+}
+
+.z-index-3000{
+  z-index: 3000;
+}
+
+.z-index-4000{
+  z-index: 4000;
+}
+
+.z-index-5000{
+  z-index: 5000;
+}
+
+.z-index-6000{
+  z-index: 6000;
+}
+
+.z-index-9999{
+  z-index: 9999;
+}
